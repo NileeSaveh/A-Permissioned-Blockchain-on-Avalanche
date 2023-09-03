@@ -1,26 +1,26 @@
 const Web3 = require("web3");
 
 // Set up user custom data
-const data = process.argv[2] ? process.argv[2] : "Hello";
-const gas = process.argv[3] ? process.argv[3] : 22050;
+const data = process.argv[2] ? process.argv[2] : "Data";
+const gas = process.argv[3] ? process.argv[3] : "Fee";
 const blockchainID = process.argv[4]
   ? process.argv[4]
-  : "2L7ka8fDcg4JwjgdyhDeui2YgnZjHcUxRij5Agyv2eFpDvKr75";
+  : "BlockchianID";
 
 // Connect to an Ethereum node
-const web3 = new Web3(`http://127.0.0.1:9650/ext/bc/${blockchainID}/rpc`);
+const web3 = new Web3(`Blockchian URL/ext/bc/${blockchainID}/rpc`);
 
 // Set up two wallets
 const walletA = {
-  address: "0x8db97C7cEcE249c2b98bDC0226Cc4C2A57BF52FC",
+  address: "PublicKey",
   privateKey:
-    "0x56289e99c94b6912bfc12adc093c9b51124f0dc54ac7a766b2bc5ccf558d8027",
+    "PrivateKey",
 };
 
 const walletB = {
-  address: "0x0147c562b5aA26eF6e604Ebc1696Ab3Af5876826",
+  address: "PublicKey",
   privateKey:
-    "0x01e9438e05bbba12602a666304969a970ee9035c73a46e3912e74589ebe12841",
+    "PrivateKey",
 };
 
 var txID = "";
